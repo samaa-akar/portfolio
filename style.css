@@ -1,0 +1,644 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #FF5555;
+    --secondary-color: #d3f1b7;
+    --third-color: #A3D78A;
+    --fourth-color: #FF937E;
+}
+.head {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 9999999;
+}
+.navbar{
+    background-color: var(--main-color);
+}
+#logo {
+    color:white;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: "Merienda", cursive;
+    cursor: pointer;
+}
+#logo:hover {
+    color:var(--third-color) ;
+}
+
+
+a {
+    color:white !important;
+    font-size: large;
+    font-weight: bold;
+}
+a:hover {
+    color:var(--third-color) !important;
+    text-decoration: underline !important;
+}
+
+body{
+    padding-top: 70px;
+    
+}
+
+
+
+.Home{
+    background-color: var(--secondary-color);
+    height: 30%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.photo{
+    width: 249px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    margin: 60px ;
+    box-shadow: 0px 0px 10px var(--fourth-color);
+    align-content: center;
+    background-image: url('IMG_20220216_025221_225.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.photo:hover{
+    box-shadow: 0px 0px 25px var(--fourth-color);
+    transform: scale(1.05);
+}
+
+.Card{
+    display: flex;
+    width: 400px;
+    height: 330px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--third-color);
+    margin: 60px ;
+    box-shadow: 0px 0px 10px var(--fourth-color);
+    /*align-content: center;*/
+    text-align: center;
+    justify-content: center;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*.info{
+    /*width: 400px;
+    height: 330px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--third-color);
+    margin: 60px ;
+    box-shadow: 0px 0px 10px var(--fourth-color);
+    /*align-content: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Abril Fatface', cursive;
+}*/
+
+/*.info:hover{
+    box-shadow: 0px 0px 25px var(--fourth-color);
+    background-color: var(--fourth-color);
+    transform: scale(1.05);
+}*/
+
+.info .button{
+    background-color: var(--fourth-color);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: all .5s;
+}
+
+
+.info .button:hover{
+    box-shadow: 0px 0px 25px var(--secondary-color);
+    transform: scale(1.1);
+    background-color: var(--main-color);
+}
+
+i{
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+i:hover{
+    color: var(--main-color);
+    transform: scale(1.4);
+}
+
+@media screen and (max-width: 480px){
+    .Home{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Card{
+        width: 300px;
+        height: 250px;
+    }
+    .photo, .Card{
+        margin: 20px;
+    }
+    .photo{
+        width: 200px;
+        height: 250px;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .Home{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .photo, .Card{
+        margin: 30px;
+    }
+    .photo{
+        width: 220px;
+        height: 280px;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .photo, .Card{
+        margin: 40px;
+    }
+    .photo{
+        width: 240px;
+        height: 310px;
+        background-size: cover;
+    }
+}
+
+.About{
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    padding: 3%;
+    color: black;
+
+
+}
+.About h2{
+    text-align: center;
+    width: 50%;
+    color: var(--main-color);
+    font-size: 40px;
+    margin: 4% auto;
+}
+
+.About p{
+    border: #FF5555 2px solid;
+    border-radius: 20px 5px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2%;
+    font-size: 25px;
+    background-color: var(--secondary-color);
+    margin-bottom: 10%;
+    transition: all 0.5s;
+}
+
+.About h2:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.About p:hover{
+    background-color: var(--fourth-color);
+    scale: 1.2;
+    border: #A3D78A 10px dotted;
+    color: white;
+}
+
+.my-skills{
+    width: 100%;
+    height: 30%;
+    background-color: var(--main-color);
+    padding: 3%;
+    color: rgb(255, 255, 255);
+}
+
+.my-skills h2{
+    text-align: center;
+    width: 50%;
+    color: white;
+    font-size: 40px;
+    margin: 4% auto;
+}
+
+.my-skills h2:hover{
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+
+.skill{
+    margin: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-skills p{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px 150px;
+    align-self: flex-start;
+}
+
+.prgs{
+    width: 80%;
+    height: 40px;
+    background-color: beige;
+    border-radius: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 20px;
+}
+
+.bg{
+    height: 100%;
+    border-radius:40px ;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.prgs-html{
+    width: 95%;
+    background-color: yellow;
+}
+
+.prgs-css{
+    width: 85%;
+    background-color: blue;
+}
+
+.prgs-js{
+    width: 75%;
+    background-color: green;
+}
+
+.prgs-bootstrap{
+    width: 65%;
+    background-color: purple;
+}
+
+
+
+.projects{
+    width: 100%;
+    height: 30%;
+    padding: 3%;
+    color: rgb(255, 255, 255);
+}
+.projects h2{
+    text-align: center;
+    width: 50%;
+    color: var(--main-color);
+    font-size: 40px;
+    margin: 4% auto;
+}
+.projects h2:hover{
+    color: var(--third-color);
+    cursor: pointer;
+}
+
+
+.projects-data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+
+}
+
+.project{
+    margin-bottom: 7%;
+    width:350px;
+    height: 350px;
+    background-color: var(--third-color);
+    border-radius: 20px;
+    transition: all 1.6s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.project:hover{
+    scale: 1.15;
+}
+.project .image{
+    width: 100%;
+    height: 60%;
+}
+.project div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.project .project-link{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.project .project-link a{
+    background-color: var(--fourth-color);
+    color: white;
+    padding: 3% 5%;
+    border-radius: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 1s;
+}
+.project .project-link a:hover{
+    background-color: white;
+    color: var(--fourth-color) !important;
+    text-decoration: none;
+    scale: 1.2;
+
+}
+
+.contact{
+    width: 100%;
+    height: 30%;
+    padding: 3%;
+/* color: var(--main-color);*/
+    background-color: var(--secondary-color);
+}
+.contact h2{
+    text-align: center;
+    width: 50%;
+    color: var(--main-color);
+    font-size: 40px;
+    margin: 4% auto;
+}
+.contact h2:hover{
+    color: var(--fourth-color);
+    cursor: pointer;
+}
+
+
+.contact-me{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+}
+
+.contact-card{
+    margin-bottom: 7%;
+    width:350px;
+    height: 40em;
+    background-color: var(--third-color);
+    border-radius: 20px 40px;
+    transition: all .6s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact-card:hover{
+    scale: 1.05;
+}
+
+.contact-card form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-card label{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.contact-card input, .contact-card textarea{
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+}
+.contact-card button{
+    background-color: var(--fourth-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    box-shadow: silver 5px 5px 10px;
+}
+.contact-card button:hover{
+    box-shadow: 0px 0px 25px var(--secondary-color);
+    transform: scale(1.1);
+    background-color: var(--main-color);
+}
+.footer{
+    width: 100%;
+    height: 7%;
+    background-color: var(--fourth-color);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Abril Fatface', cursive;
+}
+.footer p{
+    margin: 0 20px;
+}
+.footer p:hover{
+    color: var(--secondary-color);
+}
+
+/*@media screen and (min-width:300px) and (max-width:500px){
+    .my-skills h2{
+    font-size: 30px;
+    
+}
+.skill p{
+    font-size: 20px;
+}
+.bg{
+    height: 30px;
+}
+.bg2{
+    font-size: 20px;
+}*/
+
+@media screen and (max-width: 480px){
+    .About h2{
+        font-size: 25px;
+    }
+    .About p{
+        font-size: 15px;
+    }
+    .About p:hover{
+    scale: 1.07;
+    }
+
+
+    .my-skills h2{
+        font-size: 25px;
+    }
+    .skill p{
+        font-size: 15px;
+        align-self: flex-end;
+    }
+    .bg{
+        height: 30px;
+    }
+    .prgs{
+        height: 30px;
+    }
+    .bg{
+        font-size: 20px;
+    }
+
+    .projects .project{
+        width: 250px;
+        height: 250px;
+    }
+    .projects h2{
+        font-size: 25px;
+    }
+    .project:hover{
+        scale: 1.07;
+    }
+    .project .project-link a{
+        font-size: 15px;
+    }
+    .project .project-link a:hover{
+        scale: 1.07;
+    }
+
+    .contact h2{
+        font-size: 25px;
+    }
+
+    .contact-card{
+        width: 250px;
+        height: 30em;
+    }
+
+    .contact-card label{
+        font-size: 15px;
+        margin: 0;
+    }
+    .contact-card button{
+        padding: 5px 10px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .contact-card input, .contact-card textarea{
+        width: 80%;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .footer{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+     .About h2{
+        font-size: 30px;
+    }
+    .About p{
+        font-size: 20px;
+    }
+    .About p:hover{
+    scale: 1.09;
+    }
+
+
+    .my-skills h2{
+        font-size: 30px;
+    }
+    .skill p{
+        font-size: 20px;
+
+    }
+    .bg{
+        height: 35px;
+    }
+    .prgs{
+        height: 35px;
+    }
+    .bg{
+        font-size: 25px;
+    }
+
+    .projects .project{
+        width: 300px;
+        height: 300px;
+    }
+    .projects h2{
+        font-size: 30px;
+    }
+    .project:hover{
+        scale: 1.09;
+    }
+    .project .project-link a{
+        font-size: 20px;
+    }
+    .project .project-link a:hover{
+        scale: 1.09;
+    }
+
+    .contact h2{
+        font-size: 30px;
+    }
+
+    .contact-card{
+        width: 300px;
+        height: 32em;
+    }
+
+    .contact-card label{
+        font-size: 20px;
+        margin: 0;
+    }
+    .contact-card button{
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+    .contact-card input, .contact-card textarea{
+        width: 80%;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .footer{
+        font-size: 15px;
+    }
+}
