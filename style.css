@@ -463,15 +463,16 @@ i:hover{
 }
 .footer{
     width: 100%;
-    height: 7%;
+    height: 60px;
     background-color: var(--fourth-color);
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Abril Fatface', cursive;
+    
 }
 .footer p{
     margin: 0 20px;
@@ -496,6 +497,9 @@ i:hover{
 }*/
 
 @media screen and (max-width: 480px){
+    .About{
+        padding: 22% 5% 5% 5%;
+    }
     .About h2{
         font-size: 25px;
     }
@@ -506,7 +510,9 @@ i:hover{
     scale: 1.07;
     }
 
-
+    .my-skills{
+        padding: 22% 5% 5% 5%;
+    }
     .my-skills h2{
         font-size: 25px;
     }
@@ -523,7 +529,9 @@ i:hover{
     .bg{
         font-size: 20px;
     }
-
+    .projects{
+        padding: 22% 5% 5% 5%;
+    }
     .projects .project{
         width: 250px;
         height: 250px;
@@ -540,7 +548,9 @@ i:hover{
     .project .project-link a:hover{
         scale: 1.07;
     }
-
+    .contact{
+        padding: 22% 5% 5% 5%;
+    }
     .contact h2{
         font-size: 25px;
     }
@@ -566,11 +576,15 @@ i:hover{
     }
 
     .footer{
-        font-size: 10px;
+        padding: 3% 0;
+        font-size: 13px;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
-     .About h2{
+    .About{
+        padding: 22% 5% 5% 5%;
+    }
+    .About h2{
         font-size: 30px;
     }
     .About p{
@@ -580,7 +594,9 @@ i:hover{
     scale: 1.09;
     }
 
-
+    .my-skills{
+        padding: 22% 5% 5% 5%;
+    }
     .my-skills h2{
         font-size: 30px;
     }
@@ -597,7 +613,9 @@ i:hover{
     .bg{
         font-size: 25px;
     }
-
+    .projects{
+        padding: 22% 5% 5% 5%;
+    }
     .projects .project{
         width: 300px;
         height: 300px;
@@ -614,7 +632,9 @@ i:hover{
     .project .project-link a:hover{
         scale: 1.09;
     }
-
+    .contact{
+        padding: 22% 5% 5% 5%;
+    }
     .contact h2{
         font-size: 30px;
     }
@@ -640,5 +660,7 @@ i:hover{
 
     .footer{
         font-size: 15px;
+        padding: 3% 0;
     }
 }
+    
